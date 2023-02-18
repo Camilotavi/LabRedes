@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #e9e9e9;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 30px;
+      font-family: sans-serif;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #0073cf;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(1) {
+      background-color: #0073cf;
+      color: white;
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: left;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Lab Redes y comunicacion de datos #1</h1>
+    </header>
+    <aside class="left">
+      <h2>Indice</h2>
+
+      <ul>
+        <li><a class="active">Problema inicial</a></li>
+        <li><a>Elementos de red</a></li>
+        <li><a>Tipos de redes</a></li>
+        <li><a>Simulación</a></li>
+        <li><a>Topologia</a></li>
+        <li><a>Protocolos</a></li>
+        <li><a>Desafios Encontrados</a></li>
+        <li><a>Conclusiones</a></li>
+      </ul>
+
+      <br><br>
+
+      <p>Integrantes:<br>Carlos Conde <br>Angel Neira <br>Camilo Tarazona</p>
+    </aside>
+    <main class="content">
+
+      <h2>Problematica inicial</h2>
+
+      <p>¿Cómo permitir que Carlos Ronaldo y sus familiares puedan navegar por la página Web cisco.com, desde su casa, desde sus computadores personales y teléfonos celulares, utilizando una red y comunicación de datos?</p>
+
+      <hr><br>
+
+      <h2>Elementos de red usados en la simulación</h2>
+
+      <table>
+        <tr>
+          <th>Elemento</th>
+          <th>Descripción</th>
+          
+        </tr>
+        <tr>
+          <td><i class="fas fa-desktop"></i></td>
+          <td><i class='fas fa-align-left'></i></i></td>
+        </tr>
+        <tr>
+          <td>Dispositivos Inteligentes</td>
+          <td>Aparatos electrónicos que pueden conectarse, compartir información e interactuar con los usuarios y con otros dispositivos inteligentes, mediante una red LAN. En este laboratorio se simulo una PC, dos laptops y un smartphone</td>
+        </tr>
+        <tr>
+          <td>Router</td>
+          <td>Es un hardware el cual a diferencia del módem permite la conexión de uno o más dispositivos a una red local la cual está a su vez obtiene acceso al internet y estos pueden gestionar el tráfico de la información transmitida entre los dispositivos que se encuentren conectados a la red local los cuales estarán asignados con una dirección ip la cual es diferente en cada dispositivo conectado, hablando de la información transmitida por este dispositivo, este proceso del paso de la información se realiza por paquetes de datos los cuales cuentan con sus secciones/capas de las cuales se pueden identificar: el emisor, tipo de información, y hacia dónde se dirige esta información. <br> Estos son los más utilizados en las empresas hoy en día debido a que permiten una conexión práctica con varios dispositivos de empleados a la vez que se puede gestionar su propia seguridad con el uso de software protegiendo de posible malware y sitios web no deseados para una red local de hogar o compañía.</td>
+        </tr>
+        <tr>
+          <td>Modem</td>
+          <td>Es un dispositivo con la capacidad de permitir la comunicación entre 1 dispositivo a la red de internet  que convierte señales analogicas en digitales con el fin de permitir a dispositivos el acceso a la net, a la vez que el modem respecto a sus servicios funciona recibiendo la información del proveedor de servicios de internet a través del elemento cable coaxial, luego se hace el proceso de la conversión de señales correspondiente y realizar el proceso de intercambio de información correspondiente.</td>
+        </tr>
+        <tr>
+          <td>Servidor</td>
+          <td> Consiste en un ordenador o cpu física el cual siempre ha de mantenerse encendido para proporcionar su servicio el cual tiene como función, el transmitir la información a otros dispositivos que estén conectados al mismo servidor y entre los datos que se pueden transmitir mediante estos servidores se encuentran: bases de datos, archivos de texto, fotos/imágenes, archivos de video, audios, etc.</td>
+        </tr>
+        <tr>
+          <td>Nube</td>
+          <td>Esta hace referencia a servidores los cuales se acceden por medio de un dispositivo con capacidad de conexión a internet y con esto el usuario obtendrá acceso a bases de datos que están ligadas a estos mismos servidores. Los servidores pertenecientes a la nube se encuentran guardados en otras bases de datos de todo el planeta, gracias a esta función hogares, negocios, etc. pueden manejar sus servidores de red sin necesidad de algún hardware o software adicional en sus dispositivos.</td>
+        </tr>
+      </table>
+
+      <hr><br>
+
+      <h2>Tipos de redes y conexiónes</h2>
+
+      <h4>LAN</h4>
+      <p>Local Area Network. Las Redes de Área Local son las más utilizadas en el intercambio de datos y recursos entre ordenadores. Habitualmente se utilizan para conectar equipos en espacios relativamente pequeños. Permite la conexción entre el PC, el router y el modem; y tambien entre el servidor y la nube.</p>
+
+      <h4>WLAN</h4>
+      <p>Wireless Local Network. A diferencia de la Red LAN, ésta red es inalámbrica y realiza el intercambio de información a través de ondas de radio. Permite la conexión entre las dos Laptos y el smartphone con el router.</p>
+
+      <h4>Cable coaxial</h4>
+      <p>Tipo de conexión de banda ancha que utiliza líneas de cable coaxial de cobre para transmitir datos a través de señales de radiofrecuencia. Permite la conexion entre la nube y el modem.</p>
+
+      <hr><br>
+
+      <h2>Simulación de la solución</h2>
+      <p>Para hacer la conexión de esta pequeña red de comunicaciones en casa, se definieron primero los dispositivos que se van a usar, los dispositivos fueron, un servidor, una nube a la que llamaremos “internet”, un cable módem y un router, de esta manera hacer una pequeña red y comunicación de datos para que los dispositivos que estén conectados ya sea de manera inalámbrica o por medio de cable puedan acceder a una página llamada Cisco.com. A continuación, la arquitectura de la solución.</p>
+      <img src="Lab.png" alt="Arquitectura Lab" class="center">
+
+      <p>1.Conectar los dispositivos <br> Primero se debe conectar todos dispositivos, comenzando con el servidor, el servidor va conectado directamente al internet, por medio de un cable de cobre directo, el internet va conectado al cable modem por medio de un cable de coaxial, y el cable modem va conectado al router por medio de cable de cobre directo.
+      </p>
+      <p>Después se miran que dispositivos van a usar la red y los seleccionamos, para nuestro caso utilizamos una PC, dos laptops y un smartphone.</p>
+      <p>La PC va conectada al router por medio de cable de cobre directo, es decir, por un medio alámbrico, caso contrario en los dispositivos como las laptops y el celular ya que estos están conectados por un medio inalámbrico que es el wifi, en el caso de las laptops hay que cambiar un componente, para esto hay que apagar la laptop, quitarle el componente que no vamos a usar y ponerle un adaptador de wifi, para que reciba las señales wifi y se conecte al router.</p>
+      <p>2.Configurar los dispositivos. <br> Este probablemente es el paso más complicado ya que toco buscar bastante información acerca de esto, primero comenzamos configurando el servidor el cual va a estar alojada la pagina a la que se quiere ingresar (cisco.com), para esto debemos entrar al servidor, entrar al desktop y abrir la pestaña de IP configuration, aquí vemos algunas cosas como el “IPv4 address”, “subnet Mask”, “Gateway” y “DNS server”, para configurarlo nos aseguramos de que este seleccionada la opción de ”Static”.</p>
+      <p>A continuación, le asignamos una dirección de IP al servidor, en mi caso yo le puse “192.56.100.100”, la subred se configura automáticamente, dándonos un numero de “255.255.255.0”, también le añadimos un numero a la puerta de 192.56.100.1 y al servidor DNS que le dejamos el mismo número que la dirección de IP.</p>
+      <p>En el mismo servidor vamos a añadir la página web, la aplicación de cisco ya nos da una pagina en HTML de ejemplo, nosotros utilizamos la misma página, pero lo que vamos a hacer es que se pueda utilizar esa página en los diferentes dispositivos, para esto tenemos que guardar la página en el DNS, lo primero que tenemos que hacer es entrar al servidor y abrir la pestaña que dice “Services” de la parte superior, cuando estemos adentro buscamos una parte que dice DNS, aquí entramos y lo primero que hacemos es encender el servicio de DNS.</p>
+      <p>Para agregar la página primero le damos el nombre que es cisco.com, y le agregamos una dirección, en este caso como anteriormente configuramos la IP y servidor DNS con el mismo número, entonces lo ponemos exactamente igual (192.56.100.100) ya que la dirección de la página va a estar en ese mismo servidor, para finalizar con la configuración del servidor, le damos agregar al DNS y nuestra pagina quedara guardada en ese servidor.</p>
+      <p>El siguiente por configurar es el Internet, en este caso solo le vamos a especificar, que para su conexión estamos usando cable, esto se hace entrando al internet y en la pestaña de “config” buscar una opción que dice Ethernet6, entramos y le damos la opción de cable, después en la misma configuración buscamos una opción que dice “cable” entramos y seleccionamos los puertos de salida y, de entrada, en este caso añadimos el “From port” de coaxial7 y el “To port” el Ethernet6.</p>
+      <p>Por último configuramos el router, para esto entramos al router y entramos a la pestaña que dice “GUI”, aquí podemos ver la dirección de IP que el router va a asignar a cada dispositivo cambiando el último dígito de la IP en valor consecutivo, en mi caso lo tengo configurado has 29, esto quiere decir que este router solo va a tener capacidad para 30 dispositivos, para que nuestros dispositivos puedan acceder al servidor vamos a habilitar la opción de DHCP server, en donde dice “Static DNS 1” vamos a poner la dirección del servidor (192.56.100.100), la misma dirección IP, para finalizar vamos a la parte de abajo y guardamos los cambios.</p>
+      <p>De esta manera ya está configurada la red para que los dispositivos puedan entrar a la página que está alojada en el servidor.</p>
+      <p>3. Mirar que todo haya quedado bien <br> Para comprobar que podemos ingresar a la página, podemos seleccionar cualquier dispositivo y entrar a la pestaña de desktop, aquí entramos al web browser y accedemos a cisco.com, si está bien nos debe aparecer una página de ejemplo que nos da la misma aplicación de cisco packet tracer.</p>
+      <p>Así es como Carlos Ronaldo y su familia pueden acceder a la página de cisco.com desde cualquier dispositivo que esté conectado a esa red.</p>
+
+
+      <hr><br>
+
+      <h2>Topología</h2>
+      <p>En la arquitectura propuesta para la solución de la problematica inicial, se distingue una topologia tipo árbol o jerárquica. Este tipo de topología se caracteriza por organizar nodos de manera que formen una estructura jerarquica. Dicha organizacion tambien se caracteriza por determinar cierto orden entre los dispositivos basados en su importancia partiendo desde los elementos superiores a los inferiores. Como se ilustra en la siguiente imagen.</p>
+      <img src="Topologia.png" alt="simulacion"  class="center">
+
+      <p>Partimos de un servidor y la nube, elementos que ofrecen tanto tanto la pagina de cisco.com como demas bases de datos. El modem se conecta a la nube. El router al modem para poder crear la red de area local, tanto inalambrica como alambrica. Y finalmente los dispositivos se conectan al router para poder acceder a internet y a la pagina de cisco.com.</p>
+
+      <hr><br>
+
+      
+
+      <h2>Que protocolos se vieron en la simulación</h2>
+      <h4>Durante la simulación, se evidenciaron los siguientes protocolos</h4>
+
+      <p>STP(Spanning Tree Protocol): Protocolo del árbol esparcido. Permite a las redes LAN hacer enlaces redundantes, los cuales permiten mantener funcionando la red cuando un enlace falla o incluso si un switch completo falla. </p>
+      <p>DTP(Dynamic Trunking Protocol): Protocolo propietario creado por cisco systems. Establece los puertos ethernet en cinco modos diferentes de trabajo: AUTO, ON, OFF, DESIRABLE y NON-NEGOTIATE.</p>
+      <p>DHCP(Dynamic Host Configuration Protocol): Se encarga se asignar dinamicamente direcciones IP a los dispositivos. Cada dispositivo debe tener una IP única para así evitar caos en la red local y evitar que equipos reciban informacion mal dirigida.</p>
+      <p>LCMP(Internet Control Message Protocol): Protocolo que utilizan los dispositivos de red para diagnosticar problemas de comunicación en la red.</p>
+      <p>ARP(Address Resolution Protocol): Este protocolo se encraga de vincular direcciones fisicas(MAC) con direcciones logicas(IP).</p>
+      <p>NDP(Neighbor Discovery Protocol): Protocolo de IPv6 equivalente al protocolo ARP en IPv4. Permite que un nodo que se acaba de conectar a una red pueda ver otros nodos conectados a la red y sus respectivas direcciones IP.</p>
+      <p>HTTP(HyperText Transfer Protocol): Permite realizar una petición de datos y recursos desde un dispositivo conectado a la red, como pueden ser documentos HTML. En este caso, es el que permite visualizar la página cisco.com desde los dispositivos de la simulación.</p>
+
+      <table>
+        <tr>
+          <th>Protocolo</th>
+          <th>En que dispositivos se dio</th>
+        </tr>
+        <tr>
+          <td>STP</td>
+          <td>PC, Router</td>
+        </tr>
+        <tr>
+          <td>DTP</td>
+          <td>Laptop, Laptop0, Laptop1, Router, PC</td>
+        </tr>
+        <tr>
+          <td>DHCP</td>
+          <td>PC, Smartphone, Router, Laptop, Laptop0, Laptop1</td>
+        </tr>
+        <tr>
+          <td>ICMP</td>
+          <td>Router</td>
+        </tr>
+        <tr>
+          <td>ARP</td>
+          <td>PC, Laptop, Laptop0, Laptop1, Router</td>
+        </tr>
+        <tr>
+          <td>NDP</td>
+          <td>Smartphone</td>
+        </tr>
+      </table>
+      
+
+
+      <hr><br>
+
+      <h2>Desafíos Encontrados</h2>
+
+      <p>El desafío más grande que encontramos en el proceso de elaboración de la red fue encontrar y ver cómo funcionan los componentes que usamos ya que en la aplicación nos dan algunos dispositivos como lo es el servidor o router, el problema es encontrar cómo funcionan y cómo configurarlos para que sean funcionales en el laboratorio que queremos realizar.</p>
+
+      <hr><br>
+
+      <h2>Conclusiones</h2>
+      <p>A partir de lo realizado en la simulación en el software de packet tracer y de los conceptos de redes aplicados en el problema podemos concluir que el proceso de configuración de una red requiere del análisis profundo de los conceptos en este ámbito sobre todo en la parte de los ajustes del servidor debido al tipo de configuración de ip que se manejo en el desarrollo de la simulación ya que también se hizo uso de una página web de ejemplo para el funcionamiento del servidor en los dispositivos y ala vez de ajustarles con una dirección ip propia dentro de la red local de Carlos Ronaldo.</p>
+      <p>Ahora haciendo referencia al ajuste de la pagina tambien se realizo una configuración de dirección ip la cual nos permitiera enlazar con el servidor principal y ese proceso hubo bastante aplicación de los conceptos de los datos en la nube los cuales se resumiría en la base de datos del sitio web con la información transmitida y recibida desde los dispositivos y la red internet de Carlos.</p>
+    </main>
+    <footer class="footer">
+      <h2>Referencias</h2>
+      <p>[1]Anónimo, (2023),Cloudfare que es la nube?, accedido el 18 de febrero de 2023 https://www.cloudflare.com/es-es/learning/cloud/what-is-the-cloud/</p>
+      <p>[2] Escobar. Pruebas de comunicación ping en packet tracer. (27 de abril de 2021). Accedido el 18 de febrero de 2023. [Video en línea]. Disponible: https://www.youtube.com/watch?v=K-ZSxiEq5wM</p>
+      <p>[3] Sin autor(2021). "Protocolos a nivel de aplicación de Internet". International Business Machines Corporation (IBM). Nueva York. Recuperado de:https://www.ibm.com/docs/es/aix/7.2?topic=protocols-internet-application-level</p>
+      <p>[4] mba java. Como Crear Una Pagina Web en Un Servidor Con Packet Tracer Tutorial. (8 de septiembre de 2017). Accedido el 18 de febrero de 2023. [Video en línea]. Disponible: https://www.youtube.com/watch?v=a1ri6GMyHxk</p>
+      <p>[5]Elmer Romario Jara Jara. Conexión de router con la nube y servidores Cisco packet tracer. (23 de noviembre de 2019). Accedido el 18 de febrero de 2023. [Video en línea]. Disponible: https://www.youtube.com/watch?v=kQJyro-gc_c</p>
+      <p>[6] Altatec Seguridad. Como Configurar Servidor Web en Packet Tracer 2020. (5 de octubre de 2019). Accedido el 18 de febrero de 2023. [Video en línea]. Disponible: https://www.youtube.com/watch?v=xkLK7MWUIgQ</p>
+      <p>[7]AquiHayDeTodo. Servicio HTTP en Cisco Packet Tracer. (12 de febrero de 2018). Accedido el 18 de febrero de 2023. [Video en línea]. Disponible: https://www.youtube.com/watch?v=_qrrhmP_zOw</p>
+      <p>[8] Jose Antonio Castillo, Modem: Qué es, cómo funciona y un poco de historia, (27 enero, 2019), Accedido el 18 de febrero de 2023 https://www.profesionalreview.com/2019/01/27/modem-que-es/</p>
+      <p>[9] Carly Burdova  ¿Qué es un router y cuál es su función?, (Agosto 19, 2022), Accedido el 17 de febrero de 2023    
+      https://www.avg.com/es/signal/what-is-a-router
+      </p>
+      <p>[10] Robert Cabrera  ¿Que es un servidor?, (Junio 27 de 2019), Accedido el 17 de febrero de 2023 
+      https://hostingwebcloud.com/que-es-un-servidor/
+      </p>
+
+    </footer>
+  </div>
+</body>
+
+</html>
